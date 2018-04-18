@@ -1,0 +1,157 @@
+/* Rafael Angelo Pucut */
+/*
+* Resets tall styles to nothing. Leave this in your file.
+*/
+html, body, div, span, article, header, footer, nav,
+h1, h2, h3, h4, h5, h6, p{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* Note: Each style (or series) must have a short comment. */
+
+/*Using the Sansita-Regular Font Face*/
+@font-face {
+	font-family: myFirstFont;
+	src: url("Sansita-Regular.ttf");
+}
+/*Body Styling*/
+body {
+	font-family: myFirstFont;		/*Implements the font above*/
+	padding-top: 5em;
+	padding-right: 5em;
+	padding-left: 5em;
+}
+
+/*Heading Styles*/
+h1 {
+	font-size: 75px;
+	font-weight: bold;
+	text-align: center;
+}
+div h2 {
+	font-size: 25px;
+	text-decoration: underline;
+	text-align: center;
+	padding-bottom: 0.5em;
+}
+
+/*Navigation Links Styles - Pseudoclass styling*/
+a {
+	color: red;
+}
+a:visited {
+	color: orange;
+}
+a:hover {
+	background-color: black;
+}
+a:active {
+	color: blue;
+}
+div nav ul li {
+	display: inline;
+	margin: 3em;
+}
+aside.sidebar ul li {
+	display: inline;
+	margin: 3em;
+}
+
+/*Background Styles with padding*/
+#container {
+	padding: 5em;
+	background-color: white;
+	border: solid 2px white;
+	border-radius: 2em;
+}
+.canada {
+  background: -webkit-linear-gradient(left, red, white);*/
+	background-color: red;
+}
+.scotland {
+	background: -webkit-linear-gradient(left, #0065BD, white);
+}
+.france {
+	background: -webkit-linear-gradient(left, blue, white, red);
+}
+.italy {
+	background: -webkit-linear-gradient(left, green, white, red);
+}
+.index {
+	background: -webkit-linear-gradient(#FFCC00, #FFE680);
+}
+
+/*Text in browser Styles*/
+#intro {
+	padding-bottom: 2em;
+}
+#overview {
+	margin-top: 2em;
+	padding: 2em;
+	background-color: #FFFF99;
+	border: solid 2px #FF9900;
+	border-radius: 2em;
+}
+#description1, #description2, #description3 {
+	padding: 2em;
+	margin-bottom: 2em;
+	background-color: #FFFF99;
+	border: solid 2px #FF9900;
+	border-radius: 2em;
+}
+div p {
+	text-align: center;
+}
+/* Changing background colour to specific country pages */
+.scotland h2~p {
+	color: blue;
+}
+.canada h2~p {
+	color: red;
+}
+.italy h2~p {
+	color: green;
+}
+.france h2~p {
+	color: blue;
+}
+
+/*Image Styles*/
+img {
+	display: block;
+	margin: 1em;
+	width: 200px;
+	height: 200px;
+	border-radius: 10px;
+}
+article {
+	margin: auto;
+	text-align: center;
+}
+article ul li {
+	display: inline-block;
+}
+
+/* Footer Styles */
+footer {
+	margin-top: 6em;
+	background-color: silver;
+	border: solid 1px silver;
+	border-top-left-radius: 0.5em;
+	border-top-right-radius: 0.5em;
+	text-align: center;
+}
+footer address::after {
+	content: "- Styles by Rafael Angelo Pucut";
+}
+footer address div{
+	display: inline-block;
+}
+footer>div {
+	display: none;
+}
